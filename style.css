@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+p {
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.mobile label {
+  animation: 3s slidein infinite alternate-reverse;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 375px) {
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 0 36px 0 24px;
+  }
+
+  .hero {
+    background: url(./images/header-shapes\ mobile@2x.svg) no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    flex-direction: column;
+    padding: 0 24px;
+    gap: 12px;
+  }
+
+  .hero h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+  }
+
+  .hero p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .hero h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+  }
+
+  .hero ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
