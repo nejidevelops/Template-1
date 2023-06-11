@@ -10,3 +10,71 @@ body {
   position: relative;
   font-family: 'Poppins', sans-serif;
 }
+
+p {
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+@media (min-width: 375px) {
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 0 36px 0 24px;
+  }
+
+  .hero {
+    background: url(./images/header-shapes\ mobile@2x.svg) no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    flex-direction: column;
+    padding: 0 24px;
+    gap: 12px;
+  }
+
+  .hero h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+  }
+
+  .hero p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .hero h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+  }
+
+  .hero ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
