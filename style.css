@@ -80,22 +80,127 @@ header {
   }
 
   .hero p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: #344563;
   }
 
   .hero h4 {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 24px;
     color: #7f8cff;
   }
 
   .hero ul {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     justify-content: center;
     align-items: center;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    gap: 5.5rem;
+    padding-top: 114px;
+    background-color: #e5e5e5;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 12px;
+    width: 327px;
+    height: auto;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+  }
+
+  .card .card-image img {
+    width: 295px;
+    height: 220px;
+  }
+
+  .card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.25rem;
+  }
+
+  .card .card-content h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+
+  .card .card-content span {
+    display: block;
+  }
+
+  .card-content ul:nth-child(4) li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 12px;
+    background: #ebebff;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+  }
+
+  .card .card-content ul:nth-child(2) {
+    display: flex;
+    gap: 12px;
+  }
+
+  .card-content ul:nth-child(2) li {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7a869a;
+  }
+
+  .card-content ul:nth-child(2) li:nth-child(1) {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #344563;
+  }
+
+  .card-content p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .card .card-content ul:nth-child(4) {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .card .card-content button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    color: #396df2;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    background: transparent;
   }
 }
